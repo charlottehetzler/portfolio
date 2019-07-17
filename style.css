@@ -1,0 +1,135 @@
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  color: #FCFCFF;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 80px;
+  margin: 0px;
+  letter-spacing: 5px;
+  line-height: 115px;
+}
+
+h2 {
+  color: #54759F;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 54px;
+  margin: 0px;
+  letter-spacing: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: #54759F;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  margin: 0px;
+  font-size: 16px;
+}
+
+h4 {
+  color: #54759F;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+h5 {
+  color: #54759F;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+
+p {
+  color: #8E8A95;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+
+/* Welcome */
+
+#welcome {
+  background: linear-gradient(160deg, #628395 0%, #3F63B1 159%);
+  height: 800px;
+  width: 100%;
+}
+
+.first-header {
+  padding-right: 200px;
+  padding-top: 220px;
+}
+
+.second-header {
+  padding-left: 460px;
+}
+
+/* About Me */
+
+.about-me {
+  background-color: #FCFCFF;
+  height: 800px;
+  width: 100%;
+}
+
+.header {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.description {
+  margin-right: 40px;
+  margin-left: 140px;
+}
+
+
+/* Experiences */
+
+
+.experiences {
+  background-color: rgba(63, 99, 177, 0.1);
+  height: 800px;
+  width: 100%;
+}
+
+.exp-timeline {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 140px;
+}
+
+
+
+
+.timeline-border {
+  font-size: 10px;
+  color: #54759F;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+span.border-line {
+  display: inline-block;
+  background: #8E8A95;
+  height: 1px;
+  width: 380px;
+  margin-left: 4px;
+}
