@@ -12,9 +12,18 @@
 
 </head>
 <body>
-  <div class="navbar">
+  <header class="navbar sticky">
+    <div class="navbar-right">
+      <ul class="navbar-menu">
+        <li class="item"><a href="#about-me">About</a></li>
+        <li class="item"><a href="#experiences">Experiences</a></li>
+        <li class="item"><a href="#Skills">Skills</a></li>
+        <li class="item"><a href="#Projects">Projects</a></li>
+      </ul>
+    </div>
 
-  </div>
+  </header>
+
   <section id="welcome" class="welcome">
     <div class="container">
       <div class="row">
@@ -22,29 +31,33 @@
           <div class="header-text">
             <h1 class="first-header">Hello,</h1>
             <h1 class="second-header">Party People!</h1>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about-me">
+  <section id="about-me">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-4">
           <div class="header">
             <h2>Nice to meet you!</h2>
           </div>
-          <div class="description">
-            <p> Hi there! I have recently graduated from Le Wagon, Tel Aviv’s Ruby on Rails Full-Stack Coding bootcamp. After having gained professional working experiences at KPMG WpG and BMW AG, I realized the great importance of programming, decided to become a full-stack developer and fell in love with coding. </p>
+          <div class="about-me-description">
+            <div class="description">
+              <p> Hi there! I have recently graduated from Le Wagon, Tel Aviv’s Ruby on Rails Full-Stack Coding bootcamp. After having gained professional working experiences at KPMG WpG and BMW AG, I realized the great importance of programming, decided to become a full-stack developer and fell in love with coding. </p>
+            </div>
+            <div class="picture">
+              <img src="images/charly.jpg" alt="Profile">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="experiences">
+  <section id="experiences">
     <div class="row">
       <div class="header">
         <h2>Experiences</h2>
@@ -54,7 +67,7 @@
           <div class="exp-single">
             <div class="exp-time">
               <h3>Nov 2014 - Mar 2017</h3>
-              <h4>Advisory FS</h4>
+              <h4>Advisory Financial Services</h4>
             </div>
             <div class="timeline-border">
               <i class="fas fa-circle"></i>
@@ -65,7 +78,7 @@
                 <h4>KPMG WpG AG</h4>
                 <h5>Munich, Germany</h5>
                 <p class="timeline-description">
-
+                  Part of the project team implementing IFRS 9 within a large international financial institution as a working student. Main focus on the second phase "Impairment".
                 </p>
               </div>
             </div>
@@ -86,7 +99,7 @@
                 <h4>BMW AG</h4>
                 <h5>Munich, Germany</h5>
                 <p class="timeline-description">
-
+                  Business Development in the Resiudal Value Risk department. Quantification of possible impacts on residual values resulting from current political and regulatory discussions.
                 </p>
               </div>
             </div>
@@ -107,6 +120,9 @@
                 <h4>Le Wagon</h4>
                 <h5>Tel Aviv, Israel</h5>
                 <p class="timeline-description">
+                  9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015,
+                  SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to
+                  pro<!-- duction a clone of AirBnB and a Rails prototype -->
                 </p>
               </div>
             </div>
@@ -116,8 +132,41 @@
     </div>
   </section>
 
-  <section class="education">
+  <section id="skills">
+    <div class="row">
+      <div class="header">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-overview">
+        <div class="skills-section">
+          <img src="images/ruby.png" alt="Ruby" class="skill">
+          <img src="images/rails.png" alt="Rails" class="skill">
+          <img src="images/html-5.png" alt="HTML" class="skill">
+          <img src="images/css.png" alt="CSS" class="skill">
+          <img src="images/javascript.png" alt="JavaScript" class="skill">
+        </div>
+        <div class="skills-section">
+          <img src="images/jquery.png" alt="jQuery" class="skill">
+          <img src="images/postgresql.png" alt="PostgreSQL" class="skill">
+          <img src="images/bootstrap.png" alt="Bootstrap" class="skill">
+          <img src="images/sass.png" alt="SASS" class="skill">
+          <img src="images/github.png" alt="github" class="skill">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="projects">
+    <div class="row">
+      <div class="header">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-overview">
+        <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><img src="images/charlys-cocktails.png" alt="Charlys Cocktails" class="project"></a>
+        <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><img src="images/sockciety.png" alt="Sockciety" class="project"></a>
+        <a href="http://www.joyage.fun/" target="_blank"><img src="images/joyage.png" alt="Joyage" class="project"></a>
+      </div>
+    </div>
   </section>
 </body>
 </html>
