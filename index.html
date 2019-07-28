@@ -3,8 +3,9 @@
 <head>
   <title>Charlotte Hetzler</title>
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_1.ico">
-  <meta name="description" content="tba">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="style.css">
@@ -15,7 +16,7 @@
 <body>
   <header class="navbar sticky">
     <div class="logo">C<span id="color">.</span>H<span id="color">.</span></div>
-    <div class="navbar-right">
+    <div class="d-md-block d-none navbar-right">
       <ul class="navbar-menu">
         <li class="item" style="padding-right: 15px"><a href="#about">About</a></li>
         <li class="item" style="padding-right: 15px"><a href="#experiences">Experiences</a></li>
@@ -28,13 +29,11 @@
 
   <section id="welcome" class="welcome">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="header-text">
-            <h1 class="first-header">Hi there<span id="color">,</span></h1>
-            <h1 class="second-header">nice to meet you<span id="color">!</span></h1>
-            <a href="documents/CV.pdf" target="_blank" id="resume">Download Resume</a>
-          </div>
+      <div class="row header-text">
+        <div class="col-lg-12 text-center">
+          <h1 class="welcome-header">Hi there<span id="color">,</span> <br> nice to meet you<span id="color">!</span></h1>
+          <br>
+          <a href="documents/CV.pdf" target="_blank" id="resume">Download Resume</a>
         </div>
       </div>
     </div>
@@ -42,95 +41,86 @@
 
   <section id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-4">
-          <div class="header">
-            <h2>I'm Charlotte<span id="color">.</span></h2>
+      <div class="header">
+        <h2>I'm Charlotte<span id="color">.</span></h2>
+      </div>
+      <div class="row about-me-description">
+        <div class="col-lg-10 col-sm-12 ">
+          <div class="description">
+            <p><strong>I have recently graduated from Le Wagon, Tel Aviv’s Ruby on Rails Full-Stack Coding bootcamp.
+            Having gained some professional working experiences, I realized the great importance of programming, decided to become a full-stack developer and fell in love with coding.</strong>
+            <br>
+            <br>
+            <span class="more-text">After finishing school in Hamburg, I started studying Business Administration in my hometown Munich. Having developed a particular interest in the finance and accounting area from the beginning of my studies, I started as a working student at KPMG AG for the rest of my stuides and proceeded afterwards as a risk manager at BMW AG. However, from the first day I started coding I loved it and knew I want to continue with it. Therefore, I'm eager to find a job in the tech industry where I can bring all my skills together while continuing to improve and learn as a Full-Stack developer.</span></p>
           </div>
-          <div class="about-me-description">
-            <div class="col-sm-6">
-              <div class="description">
-                <p><strong>I have recently graduated from Le Wagon, Tel Aviv’s Ruby on Rails Full-Stack Coding bootcamp. After having gained professional working experiences, I realized the great importance of programming, decided to become a full-stack developer and fell in love with coding.</strong></p>
-                <p style="padding-top: 20px"> After finishing school in Hamburg, I started studying Business Administration in my hometown Munich. Having developed a particular interest in the finance and accounting area from the beginning of my studies, I started as a working student at KPMG AG for the rest of my stuides and proceeded afterwards as a risk manager at BMW AG. However, from the first day I started coding I loved it and knew I want to continue with it. Therefore, I'm eager to find a job in the tech industry where I can bring all my skills together while continuing to improve and learn as a Full-Stack developer.</p>
-              </div>
-            </div>
-            <div class="col-sm-offset-1 col-sm-5">
-              <div class="picture">
-                <img src="images/charly.jpg" alt="Profile">
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="col-lg-2 col-sm-12 picture">
+          <img src="images/charly.jpg" alt="Profile">
         </div>
       </div>
     </div>
   </section>
 
   <section id="experiences">
-    <div class="row">
+    <div class="container">
       <div class="header">
         <h2>Experiences<span id="color">.</span></h2>
       </div>
-      <div class="exp-timeline">
-        <div class="col-sm-4">
-          <div class="exp-single">
-            <div class="exp-time">
-              <h3>Nov 2014 - Mar 2017</h3>
-              <h4>Advisory Financial Services</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h4>KPMG AG</h4>
-                <h5>Munich, Germany</h5>
-                <p class="timeline-description">
-                  Part of the project team implementing IFRS 9 within a large international financial institution as a working student. Main focus on the second phase "Impairment".
-                </p>
-              </div>
+      <div class="row exp-timeline">
+        <div class="col-lg-4 col-sm-12 exp-single">
+          <div class="exp-time">
+            <h3>Nov 2014 - Mar 2017</h3>
+            <h4>Advisory Financial Services</h4>
+          </div>
+          <div class="timeline-border">
+            <i class="fas fa-circle"></i>
+            <span class="border-line"></span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-content">
+              <h4>KPMG AG</h4>
+              <h5>Munich, Germany</h5>
+              <p class="timeline-description">
+                Part of the project team implementing IFRS 9 within a large international financial institution as a working student. Main focus on the second phase "Impairment".
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="exp-single">
-            <div class="exp-time">
-              <h3>Jul 2017 - Jan 2019</h3>
-              <h4>International Risk Management</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h4>BMW AG</h4>
-                <h5>Munich, Germany</h5>
-                <p class="timeline-description">
-                  Business Development in the resiudal value risk department. Quantification of possible impacts on residual values resulting from current political and regulatory discussions.
-                </p>
-              </div>
+        <div class="col-lg-4 col-sm-12 exp-single">
+          <div class="exp-time">
+            <h3>Jul 2017 - Jan 2019</h3>
+            <h4>International Risk Management</h4>
+          </div>
+          <div class="timeline-border">
+            <i class="fas fa-circle"></i>
+            <span class="border-line"></span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-content">
+              <h4>BMW AG</h4>
+              <h5>Munich, Germany</h5>
+              <p class="timeline-description">
+                Business Development in the resiudal value risk department. Quantification of possible impacts on residual values resulting from current political and regulatory discussions.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="exp-single">
-            <div class="exp-time">
-              <h3>May 2019 - Jul 2019</h3>
-              <h4>Computer Programming</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h4>Le Wagon</h4>
-                <h5>Tel Aviv, Israel</h5>
-                <p class="timeline-description">
-                  9-week intensive coding bootcamp learning i.e. Ruby on Rails, HTML, CSS and JavaScript ES6. Created and designed several projects and shipped them to production.
-                </p>
-              </div>
+        <div class="col-lg-4 col-sm-12 exp-single">
+          <div class="exp-time">
+            <h3>May 2019 - Jul 2019</h3>
+            <h4>Computer Programming</h4>
+          </div>
+          <div class="timeline-border">
+            <i class="fas fa-circle"></i>
+            <span class="border-line"></span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-content">
+              <h4>Le Wagon</h4>
+              <h5>Tel Aviv, Israel</h5>
+              <p class="timeline-description">
+                9-week intensive coding bootcamp learning i.e. Ruby on Rails, HTML, CSS and JavaScript ES6. Created, designed and shipped several projects to production.
+              </p>
             </div>
           </div>
         </div>
@@ -139,47 +129,57 @@
   </section>
 
   <section id="skills">
-    <div class="row">
+    <div class="container">
       <div class="header">
         <h2>Skills<span id="color">.</span></h2>
       </div>
       <div class="skills-overview">
-        <div class="skills-section">
-          <img src="images/skills/ruby.png" alt="Ruby" class="skill">
-          <img src="images/skills/rails.png" alt="Rails" class="skill">
-          <img src="images/skills/html-5.png" alt="HTML" class="skill">
-          <img src="images/skills/css.png" alt="CSS" class="skill">
-          <img src="images/skills/javascript.png" alt="JavaScript" class="skill">
+        <div class="row skills-section">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/ruby.png" alt="Ruby" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/rails.png" alt="Rails" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/postgresql.png" alt="PostgreSQL" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/github.png" alt="github" class="skill">
+          </div>
         </div>
-        <div class="skills-section">
-          <img src="images/skills/jquery.png" alt="jQuery" class="skill">
-          <img src="images/skills/postgresql.png" alt="PostgreSQL" class="skill">
-          <img src="images/skills/bootstrap.png" alt="Bootstrap" class="skill">
-          <img src="images/skills/sass.png" alt="SASS" class="skill">
-          <img src="images/skills/github.png" alt="github" class="skill">
+        <div class="row skills-section">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/html-5.png" alt="HTML" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/css.png" alt="CSS" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/javascript.png" alt="JavaScript" class="skill">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="images/skills/bootstrap.png" alt="Bootstrap" class="skill">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <div class="row">
+    <div class="container">
       <div class="header">
         <h2>Projects<span id="color">.</span></h2>
       </div>
       <div class="projects-overview">
-        <div class="col-sm-4">
-          <div class="project">
+        <div class="row">
+          <div class="col-xl-4 col-lg-12 project">
             <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><img src="images/charlys-cocktails.png" alt="Charlys Cocktails" id="project-box"></a>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="project">
+          <div class="col-xl-4 col-lg-12 project">
             <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><img src="images/sockciety.png" alt="Sockciety" id="project-box"></a>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="project">
+          <div class="col-xl-4 col-lg-12 project">
             <a href="http://www.joyage.fun/" target="_blank"><img src="images/joyage.png" alt="Joyage" id="project-box"></a>
           </div>
         </div>
@@ -188,26 +188,29 @@
   </section>
 
   <section id="contact">
-    <div class="row contacts">
-      <div class="col-lg-4 col-sm-12">
-        <div class="header">
-          <h2 id="footer">Contact<span id="color">.</span></h2>
+    <div class="container">
+      <div class="row contacts">
+        <div class="col-lg-4 col-sm-12 header">
+          <h2 class="d-lg-block d-none"id="footer">Contact<span id="color">.</span></h2>
         </div>
-      </div>
-      <div class="col-lg-8 col-sm-12">
-        <div class="contact-overview">
-          <a href="mailto:charlotte@hetzler.de" target="_blank"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
-          <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="col-lg-8 col-sm-12">
+          <div class="contact-overview">
+            <a href="mailto:charlotte@hetzler.de" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
+            <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 </body>
-  <script src="application.js"></script>
+<script src="application.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
 

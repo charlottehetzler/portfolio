@@ -1,3 +1,5 @@
+// Scrolling
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,6 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+// Color while scrolling
 
 const mainNavLinks = document.querySelectorAll('a[href^="#"]');
 const mainSections = document.querySelectorAll("section");
