@@ -15,13 +15,13 @@
   <header class="navbar sticky">
     <div class="navbar-right">
       <ul class="navbar-menu">
-        <li class="item"><a href="#about-me">About</a></li>
-        <li class="item"><a href="#experiences">Experiences</a></li>
-        <li class="item"><a href="#Skills">Skills</a></li>
-        <li class="item"><a href="#Projects">Projects</a></li>
+        <li class="item" style="padding-right: 15px"><a href="#about">About</a></li>
+        <li class="item" style="padding-right: 15px"><a href="#experiences">Experiences</a></li>
+        <li class="item" style="padding-right: 15px"><a href="#skills">Skills</a></li>
+        <li class="item" style="padding-right: 15px"><a href="#projects">Projects</a></li>
+        <li class="item" style="padding-right: 15px"><a href="#contact">Contact</a></li>
       </ul>
     </div>
-
   </header>
 
   <section id="welcome" class="welcome">
@@ -38,7 +38,7 @@
     </div>
   </section>
 
-  <section id="about-me">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-4">
@@ -127,7 +127,6 @@
                 <h5>Tel Aviv, Israel</h5>
                 <p class="timeline-description">
                   9-week intensive coding bootcamp learning i.e. Ruby on Rails, HTML, CSS and JavaScript ES6. Created and designed several projects and shipped them to production.
-
                 </p>
               </div>
             </div>
@@ -167,30 +166,46 @@
         <h2>Projects<span id="color">.</span></h2>
       </div>
       <div class="projects-overview">
-        <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><img src="images/charlys-cocktails.png" alt="Charlys Cocktails" class="project"></a>
-        <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><img src="images/sockciety.png" alt="Sockciety" class="project"></a>
-        <a href="http://www.joyage.fun/" target="_blank"><img src="images/joyage.png" alt="Joyage" class="project"></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="row">
-      <div class="header">
-        <h2>Contact<span id="color">.</span></h2>
-      </div>
-      <div class="contact-overview">
-        <div class="row">
-          <div class="contact-single">
-            <a class="contact-link" href="mailto:charlotte@hetzler.de"><i class="far fa-envelope"></i></a>
-            <a class="contact-link" href=""><i class="fab fa-linkedin"></i></a>
-            <a class="contact-link" href=""><i class="fab fa-github"></i></a>
-            <a class="contact-link" href=""><i class="fab fa-instagram"></i></a>
+        <div class="col-sm-4">
+          <div class="project">
+            <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><img src="images/charlys-cocktails.png" alt="Charlys Cocktails" id="project-box"></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project">
+            <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><img src="images/sockciety.png" alt="Sockciety" id="project-box"></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project">
+            <a href="http://www.joyage.fun/" target="_blank"><img src="images/joyage.png" alt="Joyage" id="project-box"></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section id="contact">
+    <div class="row contacts">
+      <div class="col-lg-4 col-sm-12">
+        <div class="header">
+          <h2 id="footer">Contact<span id="color">.</span></h2>
+        </div>
+      </div>
+      <div class="col-lg-8 col-sm-12">
+        <div class="contact-overview">
+          <a href="mailto:charlotte@hetzler.de" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
+          <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
+  <script src="application.js"></script>
 </html>
 
