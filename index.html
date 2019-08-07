@@ -6,8 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
@@ -135,31 +133,39 @@
       </div>
       <div class="skills-overview">
         <div class="row skills-section">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/ruby.png" alt="Ruby" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/ruby.png" alt="Ruby" class="skill">
+            <h3 class="skill-info">Ruby</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/rails.png" alt="Rails" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/rails.png" alt="Rails" class="skill">
+            <h3 class="skill-info">Rails</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/postgresql.png" alt="PostgreSQL" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/postgresql.png" alt="PostgreSQL" class="skill">
+            <h3 class="skill-info">PostgreSQL</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/github.png" alt="github" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/github.png" alt="github" class="skill">
+            <h3 class="skill-info">Github</h3>
           </div>
         </div>
         <div class="row skills-section">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/html-5.png" alt="HTML" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/html-5.png" alt="HTML" class="skill">
+            <h3 class="skill-info">HTML</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/css.png" alt="CSS" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/css.png" alt="CSS" class="skill">
+            <h3 class="skill-info">CSS</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/javascript.png" alt="JavaScript" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/javascript.png" alt="JavaScript" class="skill">
+            <h3 class="skill-info">Javascript</h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/skills/bootstrap.png" alt="Bootstrap" class="skill">
+          <div class="col-lg-3 col-md-6">
+            <img class="mx-auto d-block" src="images/skills/bootstrap.png" alt="Bootstrap" class="skill">
+            <h3 class="skill-info">Bootstrap</h3>
           </div>
         </div>
       </div>
@@ -173,44 +179,84 @@
       </div>
       <div class="projects-overview">
         <div class="row">
-          <div class="col-xl-4 col-lg-12 project">
-            <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><img src="images/charlys-cocktails.png" alt="Charlys Cocktails" id="project-box"></a>
+          <div class="col-xl-4 col-md-6 col-sm-12" style="width: 350px">
+            <div class="card" style="width: 350px">
+              <img class="card-img-top" src="images/charlys-cocktails.png" alt="Charlys Cocktails" width="350">
+              <div class="card-body">
+                <h3 class="card-title">Mister Cocktail</h3>
+                <p class="card-text">Create and share your cocktail recipes.</p>
+              </div>
+              <div class="overlay">
+                <a href="https://charlys-cocktails.herokuapp.com/" target="_blank"><p class="overlay-text">This is a simple website to store cocktail recipes. Each cocktail is displayed on a page showing its ingredients and a picture that can be uploaded. <br>You can edit your cocktail recipe or delete it from the database. This website was made for one user and is meant to be personal and engaging. <br>The titles are more personal than a usual website's would be.</p></a>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-12 project">
-            <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><img src="images/sockciety.png" alt="Sockciety" id="project-box"></a>
+          <div class="col-xl-4 col-md-6 col-sm-12" style="width: 350px">
+            <div class="card" style="width: 350px">
+              <img class="card-img-top" src="images/sockciety.png" alt="Charlys Cocktails" width="350">
+              <div class="card-body">
+                <h3 class="card-title">Sockciety</h3>
+                <p class="card-text">Find your missing sock at Sockciety.</p>
+              </div>
+              <div class="overlay">
+                <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><p class="overlay-text">Sockciety was my first fun group project - a platform providing a solution to the omnipresent problem of loosing socks. <br> Users can scroll trough all exisiting socks and search for a specific one based on various filters. When having a closer look on a single sock the user is provided with information like description, price, location and reviews about the owner. </p></a>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-12 project">
-            <a href="http://www.joyage.fun/" target="_blank"><img src="images/joyage.png" alt="Joyage" id="project-box"></a>
+          <div class="col-xl-4 col-md-6 col-sm-12" style="width: 350px">
+            <div class="card" style="width: 350px">
+              <img class="card-img-top" src="images/joyage.png" alt="Charlys Cocktails" width="350">
+              <div class="card-body">
+                <h3 class="card-title">Joyage</h3>
+                <p class="card-text">Find cheap flights for your city trip with friends.</p>
+              </div>
+                <div class="overlay">
+                <a href="https://joyage.fun/" target="_blank"><p class="overlay-text">Final project at Le Wagon. <br> Joyage finds the cheapest flight for a group of friends to meet at a common destination. <br> It provides different possible destinations based on the user's different starting points and their budget. The application is build by using the Amadeus API. <br> In this way, planning a group trip and booking flights can be done within a few minutes!</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12" style="width: 350px">
+            <div class="card" style="width: 350px">
+              <img class="card-img-top" src="images/onlineshop.png" alt="Charlys Cocktails" width="350">
+              <div class="card-body">
+                <h3 class="card-title">Onlineshop</h3>
+                <p class="card-text">Add products to your shopping cart and turn it into an order.</p>
+              </div>
+              <div class="overlay">
+                <a href="https://charlys-onlineshop.herokuapp.com/"><p class="overlay-text">Myos is a simple online shop where users can view all products and search for a specific one via a search interface. <br> Users can have a closer look on each product before adding it to the shopping cart which saves its items until it is transformed into an order by entering the email adress. <br> Wihtin the shopping cart the user is able to change the amount of each product or even delete it completely from the cart.</p></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row contacts">
-        <div class="col-lg-4 col-sm-12 header">
-          <h2 class="d-lg-block d-none"id="footer">Contact<span id="color">.</span></h2>
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          <div class="contact-overview">
-            <a href="mailto:charlotte@hetzler.de" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
-            <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+    <section id="contact">
+      <div class="container">
+        <div class="row contacts">
+          <div class="col-lg-4 col-sm-12 header">
+            <h2 class="d-lg-block d-none"id="footer">Contact<span id="color">.</span></h2>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="contact-overview">
+              <a href="mailto:charlotte@hetzler.de" target="_blank"><i class="fas fa-envelope"></i></a>
+              <a href="https://wa.me/+491784664985" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
+              <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</body>
-<script src="application.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</html>
+  </body>
+  <script src="application.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </html>
 
