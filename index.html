@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="This is Charlotte Hetzler's web portfolio">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_1.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,600,700&display=swap" rel="stylesheet">
@@ -16,18 +16,30 @@
 <body>
   <header class="navbar sticky">
     <div class="logo">CH</div>
-    <div class="d-md-block d-none navbar-right">
+    <div class="hidden-xs hidden-sm navbar-right">
       <ul class="navbar-menu">
-        <li class="item" style="padding-right: 15px"><a href="#about">about</a></li>
-        <li class="item" style="padding-right: 15px"><a href="#experiences">experience</a></li>
-        <li class="item" style="padding-right: 15px"><a href="#projects">projects</a></li>
-        <li class="item" style="padding-right: 15px"><a href="#skills">stack</a></li>
-        <li class="item" style="padding-right: 15px"><a href="#contact">contact</a></li>
+        <li class="item"><a href="#about">about</a></li>
+        <li class="item"><a href="#experiences">experience</a></li>
+        <li class="item"><a href="#projects">projects</a></li>
+        <li class="item"><a href="#skills">stack</a></li>
+        <li class="item"><a href="#contact">contact</a></li>
       </ul>
+    </div>
+    <div class="dropdown">
+      <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-list-ul" id=dropdown></i>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#about">about</a>
+        <a class="dropdown-item" href="#experiences">experience</a>
+        <a class="dropdown-item" href="#projects">projects</a>
+        <a class="dropdown-item" href="#skills">stack</a>
+        <a class="dropdown-item" href="#contact">contact</a>
+      </div>
     </div>
   </header>
 
-  <section id="welcome" class="welcome">
+  <section id="welcome" id="particles-js">
     <div class="container">
       <div class="row header-text">
         <div class="col-lg-12 text-center">
@@ -247,27 +259,6 @@
       </div>
     </div>
   </section>
-
-<!--   <section id="contact">
-    <div class="container">
-      <div class="row contacts">
-        <div class="col-lg-4 col-sm-12 header">
-          <h2 class="d-lg-block d-none"id="footer">say hello</h2>
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          <div class="contact-overview">
-            <a href="mailto:info@charlottehetzler.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa.me/+491784664985" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing"></i></a>
-            <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 </body>
 <script src="application.js"></script>

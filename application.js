@@ -4,8 +4,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'start'
         });
+        document.querySelector(this.getAttribute('href')).scrollTo(0, -100);
     });
 });
 
@@ -34,3 +36,5 @@ window.addEventListener("scroll", event => {
     }
   });
 });
+
+// background animation

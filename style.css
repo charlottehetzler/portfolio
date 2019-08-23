@@ -67,6 +67,7 @@ a {
 a:hover {
   text-decoration: none !important;
   color: #F43926;
+  cursor: pointer
 }
 
 i {
@@ -78,6 +79,7 @@ i {
 i:hover {
   color: #F43926;
   transition: 1s linear;
+  cursor: pointer;
 }
 
 body {
@@ -110,6 +112,7 @@ body {
 
 div.logo {
   color: #FCFCFF;
+  background: transparent !important;
   font-size: 50px;
   font-family: 'Abril Fatface', cursive;
   font-weight: bolder;
@@ -129,16 +132,99 @@ div.logo {
   list-style-type: none;
 }
 
+li.item {
+  padding-right: 15px;
+}
+
 li a.current {
   color: #F43926;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown-menu {
+  background: #0E1E44;
+  border: none;
+}
+
+a.dropdown-item {
+  color: #FCFCFF;
+  font-size: 16px;
+}
+
+a.dropdown-item.current {
+  color: #F43926 !important;
+}
+
+i#dropdown:hover {
+  transition: 0s linear;
+}
+
+#dropdownMenuButton {
+  cursor: pointer !important;
+}
+
+
+@media(max-width: 767px) {
+ li a {
+  font-size: 18px;
+ }
+ li.item {
+  padding-right: 8px;
+ }
+ .navbar-right {
+  margin-right: 0px;
+ }
+ ul.navbar-menu {
+  padding-inline-start: 10px;
+ }
+}
+
+@media(max-width: 516px) {
+ .navbar-right {
+  display: none;
+ }
+ .dropdown {
+  display: block;
+ }
+}
+
+
 /* Welcome */
 
 #welcome {
-  background: linear-gradient(160deg, #0E1E44 73%, #F43926 111%);
   height: 100vh;
   width: 100%;
+  background: linear-gradient(-45deg, #0E1E44 73%, #F43926 111%);
+  -webkit-animation: waves 20s ease-in infinite;
+  -moz-animation: waves 20s ease-in infinite;
+  background-size: 135%;
+  animation: waves 20s ease-in infinite;
+}
+
+@-webkit-keyframes waves {
+    10%{background-position:20% 60%}
+    50%{background-position:100% 50%}
+    90%{background-position:50% 70%}
+}
+@-moz-keyframes waves {
+    10%{background-position:20% 60%}
+    50%{background-position:100% 50%}
+    90%{background-position:50% 70%}
+}
+@keyframes waves {
+    10%{background-position:20% 60%}
+    50%{background-position:100% 50%}
+    90%{background-position: 50% 70%}
 }
 
 .header-text {
@@ -617,49 +703,6 @@ h2#card-header {
 
 }
 
-/*@media(max-width: 991px) {
-  h2#card-header-name {
-    font-size: 20px;
-  }
-  h4#card-header-second {
-    font-size: 18px;
-  }
-  .card-info-contact {
-    margin-left: 8px;
-  }
-}
-
-@media(max-width: 767px) {
-  h2#card-header-name {
-    font-size: 18px;
-    text-align: left;
-    margin-left: 8px;
-  }
-  h4#card-header-second {
-    font-size: 14px;
-  }
-  h5#card-email {
-    font-size: 14px;
-  }
-  h5#card-number {
-    font-size: 14px;
-  }
-  .card-info-contact {
-    margin-left: 8px;
-  }
-  }*/
-/*.contacts {
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  }*/
-
-/*.contact-overview {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 54px;
-  }*/
 
   /* Responsiveness */
 
