@@ -204,28 +204,29 @@ i#dropdown:hover {
 #welcome {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(-45deg, #0E1E44 73%, #F43926 111%);
-  -webkit-animation: waves 20s ease-in infinite;
-  -moz-animation: waves 20s ease-in infinite;
-  background-size: 135%;
-  animation: waves 20s ease-in infinite;
+  background: linear-gradient(-45deg, #0E1E44 73%, rgba(244, 57, 38, .6) 111%);
+  -webkit-animation: waves 60s ease-in infinite;
+  -moz-animation: waves 60s ease-in infinite;
+  background-size: 400%;
+  animation: waves 60s ease-in infinite;
 }
 
 @-webkit-keyframes waves {
-    10%{background-position:20% 60%}
-    50%{background-position:100% 50%}
-    90%{background-position:50% 70%}
+    30%{background-position:40% 60%}
+    60%{background-position:70% 50%}
+    90%{background-position:60% 70%}
 }
 @-moz-keyframes waves {
-    10%{background-position:20% 60%}
-    50%{background-position:100% 50%}
-    90%{background-position:50% 70%}
+    30%{background-position:40% 60%}
+    60%{background-position:70% 50%}
+    90%{background-position:60% 70%}
 }
 @keyframes waves {
-    10%{background-position:20% 60%}
-    50%{background-position:100% 50%}
-    90%{background-position: 50% 70%}
+    30%{background-position:40% 60%}
+    60%{background-position:70% 50%}
+    90%{background-position: 60% 70%}
 }
+
 
 .header-text {
   padding-top: 200px;
