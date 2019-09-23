@@ -205,10 +205,10 @@ i#dropdown:hover {
   height: 100vh;
   width: 100%;
   background: linear-gradient(-45deg, #0E1E44 73%, rgba(244, 57, 38, .6) 111%);
-  -webkit-animation: waves 60s ease-in infinite;
-  -moz-animation: waves 60s ease-in infinite;
+  -webkit-animation: waves 40s ease-in infinite;
+  -moz-animation: waves 40s ease-in infinite;
   background-size: 400%;
-  animation: waves 60s ease-in infinite;
+  animation: waves 40s ease-in infinite;
 }
 
 @-webkit-keyframes waves {
@@ -662,7 +662,7 @@ h2#card-header {
     font-size: 12px;
   }
   h5#card-number {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .contact-card {
     text-align: center;
@@ -701,9 +701,6 @@ h2#card-header {
   h2#card-header-name {
     padding-top: 15px;
   }
-
 }
 
-
-  /* Responsiveness */
 
