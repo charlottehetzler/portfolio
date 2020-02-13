@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="popup.css">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:200,400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <title>Charlotte Hetzler</title>
@@ -15,28 +16,22 @@
 </head>
 <body>
 
-  <!--=====================================================
-    Preloader
-  =====================================================-->
-<!--   <div id='preloader' >
+<!-- Preloader -->
+  <div id='preloader' >
     <div class='loader' ></div>
     <div class='left' ></div>
     <div class='right' ></div>
   </div>
- -->
+
   <div class='main-content' >
 
-    <!--=====================================================
-      Page Borders
-    =====================================================-->
+  <!-- Page Borders -->
     <div class='page-border border-left' ></div>
     <div class='page-border border-right' ></div>
     <div class='page-border border-top' ></div>
     <div class='page-border border-bottom' ></div>
 
-    <!--=====================================================
-      Menu Button
-    =====================================================-->
+  <!-- Menu Buttons -->
     <a href='#' class='menu-btn' >
       <span class='lines' >
         <span class='l1' ></span>
@@ -45,38 +40,22 @@
       </span>
     </a>
 
-    <!--=====================================================
-      Menu
-    =====================================================-->
+  <!-- Menu -->
     <div class='menu'>
       <div class='inner'>
         <ul class='menu-items'>
-          <li>
-            <a href='#' class='section-toggle' data-section='intro'>Home</a>
-          </li>
-          <li>
-            <a href='#about' class='section-toggle' data-section='about'>About</a>
-          </li>
-          <li>
-            <a href='#projects' class='section-toggle' data-section='projects'>Projects</a>
-          </li>
-          <li>
-            <a href='#contact' class='section-toggle' data-section='contact'>Contact</a>
-          </li>
+          <li><a href='#' class='section-toggle' data-section='intro'>Home</a></li>
+          <li><a href='#about' class='section-toggle' data-section='about'>About</a></li>
+          <li><a href='#projects' class='section-toggle' data-section='projects'>Projects</a></li>
+          <li><a href='#contact' class='section-toggle' data-section='contact'>Contact</a></li>
         </ul>
       </div>
     </div>
-
     <div class='animation-block' ></div>
 
-      <!--=====================================================
-        Sections
-      =====================================================-->
       <div class='sections' >
 
-        <!--=====================================================
-          Main Section
-        =====================================================-->
+      <!-- Main Section -->
         <section id='intro' class='section section-main active'>
           <div class='container-fluid'>
             <div class='v-align'>
@@ -84,17 +63,17 @@
                 <div class='intro-text'>
                   <h1>I'm Charly</h1>
                   <p>
-                    Full-Stack Developer &<br>
                     Junior Software Engineer<br>
+                    Full-Stack Developer<br>
                     Travel Enthusiast<br>
-                    Dog Lover<br>
-                    Coffee Addict<br><br>
+                    Coffee Addict<br>
+                    Dog Lover<br><br>
                     Nice to meet you!<br>
                   </p>
                   <div class='intro-btns'>
                     <a href='#about' class='btn-custom section-toggle' data-section='about'>about</a>
-                    <a href='#projects' class='btn-custom section-toggle' data-section='projects' >PROJECTS</a>
-                    <a href='#contact' class='btn-custom section-toggle' data-section='contact' >CONTACT</a>
+                    <a href='#projects' class='btn-custom section-toggle' data-section='projects'>PROJECTS</a>
+                    <a href='#contact' class='btn-custom section-toggle' data-section='contact'>CONTACT</a>
                   </div>
                 </div>
               </div>
@@ -102,9 +81,7 @@
           </div>
         </section>
 
-        <!--=====================================================
-          About Section
-        =====================================================-->
+      <!-- About Section -->
         <section id='about' class='section about-section border-d'>
           <div class='section-block about-block'>
             <div class='container-fluid'>
@@ -230,6 +207,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="application.js"></script>
+<script src="popup.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
