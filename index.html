@@ -119,46 +119,90 @@
           </div>
         </section>
 
-        <!--=====================================================
-          Resume Section
-        =====================================================-->
-        <section id='projects' class='section projects-section border-d' >
-          <div class='section-block timeline-block' >
+      <!-- Project Section -->
+        <section id='projects' class='section portfolio-section border-d' >
+          <div class='section-block portfolio-block' >
             <div class='container-fluid' >
-              <div class='section-header' >
-                <h2><strong class='color' >PROJECTS</strong></h2>
+             <div class='section-header' >
+                <h2>My <strong class='color'>Projects</strong></h2>
               </div>
-              <ul class='timeline' >
+              <ul class='portfolio-items' >
                 <li>
-                  <div class='timeline-content' >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, doloremque, omnis! Inventore, suscipit optio sed mollitia ullam cum possimus dolorum facilis at, rerum repudiandae doloribus molestiae sit aperiam laudantium atque!</p>
+                  <div class='inner' >
+                    <img src='images/joyage.png' alt>
+                    <div class='overlay' >
+                      <a href='#popup-1' class='view-project' >
+                        View Project
+                      </a>
+                      <!--project popup-->
+                      <div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
+                        <figure>
+                          <!--project popup image-->
+                          <img src='images/joyage.png' alt>
+                        </figure>
+                        <div class='content' >
+                          <!--project popup title-->
+                          <h4>Joyage</h4>
+                          <!--project popup description-->
+                          <p>
+                            My final project at Le Wagon. Joyage finds the cheapest flight for a group of friends to meet at a common destination. It provides possible destinations based on the user's different starting points and their budget. The application is build by using the Amadeus API. In this way, planning a group trip and booking flights can be done within only a few minutes!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li>
-                  <div class='timeline-content' >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum iure blanditiis dicta quas mollitia quaerat velit tempore, sunt pariatur minima possimus inventore sed dolor.</p>
+                  <div class='inner' >
+                    <img src='images/onlineshop.png' alt>
+                    <div class='overlay' >
+                      <a href='#popup-2' class='view-project' >
+                        View Project
+                      </a>
+                      <!--project popup-->
+                      <div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
+                        <figure>
+                          <!--project popup image-->
+                          <img src='images/onlineshop.png' alt>
+                        </figure>
+                        <div class='content' >
+                          <!--project popup title-->
+                          <h4>Myos Onlineshop</h4>
+                          <!--project popup description-->
+                          <p>
+                            Myos is a simple online shop where users can view all products and search for a specific one via a search interface. Users can have a closer look on each product before adding it to the shopping cart which saves its items until it is transformed into an order by entering the email adress. Wihtin the shopping cart the user is able to change the amount of each product or even delete it completely from the cart.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li>
-                  <div class='timeline-content' >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nisi atque quis aut dolore eos optio assumenda omnis deserunt totam debitis doloribus, itaque, voluptatem accusantium, corporis modi hic eligendi. Rerum.</p>
+                  <div class='inner' >
+                    <img src='images/sockciety.png' alt>
+                    <div class='overlay'>
+                      <a href='#popup-3' class='view-project' >
+                        View Project
+                      </a>
+                      <!--project popup-->
+                      <div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
+                        <figure>
+                          <!--project popup image-->
+                          <img src='images/sockciety.png' alt>
+                        </figure>
+                        <div class='content' >
+                          <!--project popup title-->
+                          <h4>Sockciety</h4>
+                          <!--project popup description-->
+                          <p>
+                            Sockciety was my first fun group project - a platform providing a solution to the omnipresent problem of loosing socks. Users can scroll through all exisiting socks and search for a specific one based on various filters. When having a closer look on a single sock the user is provided with information like description, price, location and reviews about the owner.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
               </ul>
-            </div>
-          </div>
-
-          <div class='section-block timeline-block' >
-            <div class='container-fluid' >
-              <div class='section-header' >
-                <h2>I offer:
-                  <strong class='color' ><br>
-                  - lorem12345</strong>
-
-                  <strong class='color' ><br>
-                  - loremhjjjj</strong>
-                </h2>
-              </div>
             </div>
           </div>
         </section>
@@ -169,35 +213,33 @@
         <section id='contact' class='section contact-section border-d' >
           <div class='section-block contact-block' >
             <div class='container-fluid' >
-              <div class='section-header' >
+              <div class='section-header text-center' >
                 <h2>Contact <strong class='color'>Me</strong></h2>
               </div>
-              <div class='row' >
-                <div class='col-md-4' >
-                  <div class='contact-info-icons' >
-                    <div class='contact-info' >
-                      <i class='ion-ios-location-outline' ></i>
-                      <p>Berlin<br>Germany</p>
+                <div class='col-md-6 col-md-offset-3' >
+                  <div class='row contact-info-icons' >
+                    <div class="col-md-4 col-sm-6">
+                      <div class='contact-info' >
+                        <i class="fas fa-map-marker"></i> <br>
+                        <a href="">Berlin <br> Germany</a>
+                      </div>
                     </div>
-                    <div class='contact-info' >
-                      <i class='ion-ios-telephone-outline' ></i>
-                      <p>6666666666<br></p>
+                    <div class="col-md-4 col-sm-6">
+                      <div class='contact-info' >
+                        <i class="fas fa-star"></i> <br>
+                        <a href="https://www.linkedin.com/in/charlottehetzler/">LinkedIn </a><br>
+                        <a href="https://github.com/charlottehetzler">Github</a>
+                      </div>
                     </div>
-                    <div class='contact-info' >
-                      <i class='ion-android-globe' ></i>
-                      <p>
+                    <div class="col-md-4 col-sm-6">
+                      <div class='contact-info' >
+                        <i class="fas fa-envelope"></i> <br>
                         <a href="mailto:mail@theresaripke.com">bbb@charlottehetzler.com</a>
-                        <br>www.charlottehetzler.com<br>
-                      </p>
+                        <a href="www.charlottehetzler.com">www.charlottehetzler.com</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class='col-md-8' >
-                  <div class='about-text' >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro cupiditate suscipit doloremque temporibus magni, culpa laborum, iste error quos voluptatum ab corrupti eligendi dicta eveniet magnam necessitatibus numquam ratione?</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
