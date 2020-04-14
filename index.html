@@ -3,266 +3,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This is Charlotte Hetzler's web portfolio">
+  <meta name="description" content="This is Charlotte Hetzler's portfolio">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:200,400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <title>Charlotte Hetzler</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145277717-1"></script>
 </head>
 <body>
-  <header class="navbar sticky">
-    <div class="logo">CH</div>
-    <div class="hidden-xs hidden-sm navbar-right">
-      <ul class="navbar-menu">
-        <li class="item"><a href="#about">about</a></li>
-        <li class="item"><a href="#experiences">experience</a></li>
-        <li class="item"><a href="#projects">projects</a></li>
-        <li class="item"><a href="#skills">stack</a></li>
-        <li class="item"><a href="#contact">contact</a></li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-list" id=dropdown></i>
-      </button>
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#about">about</a>
-        <a class="dropdown-item" href="#experiences">experience</a>
-        <a class="dropdown-item" href="#projects">projects</a>
-        <a class="dropdown-item" href="#skills">stack</a>
-        <a class="dropdown-item" href="#contact">contact</a>
+
+  <!-- Preloader -->
+  <div id='preloader' >
+    <div class='loader' ></div>
+    <div class='left' ></div>
+    <div class='right' ></div>
+  </div>
+
+  <div class='main-content' >
+    <!-- Page Borders -->
+    <div class='page-border border-left' ></div>
+    <div class='page-border border-right' ></div>
+    <div class='page-border border-top' ></div>
+    <div class='page-border border-bottom' ></div>
+    <!-- Menu Buttons -->
+    <a href='#' class='menu-btn' >
+      <span class='lines' >
+        <span class='l1' ></span>
+        <span class='l2' ></span>
+        <span class='l3' ></span>
+      </span>
+    </a>
+    <!-- Menu -->
+    <div class='menu'>
+      <div class='inner'>
+        <ul class='menu-items'>
+          <li><a href='#' class='section-toggle' data-section='intro'>Home</a></li>
+          <li><a href='#about' class='section-toggle' data-section='about'>About</a></li>
+          <li><a href='#projects' class='section-toggle' data-section='projects'>Projects</a></li>
+          <li><a href='#contact' class='section-toggle' data-section='contact'>Contact</a></li>
+        </ul>
       </div>
     </div>
-  </header>
+    <div class='animation-block' ></div>
+    <div class='sections' >
 
-  <section id="welcome">
-    <div class="container">
-      <div class="row header-text">
-        <div class="col-lg-12 text-center">
-          <h1 class="welcome-header">Charlotte Hetzler</h1>
-          <h3>full-stack developer.</h3>
-          <br>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="header">
-        <h2>hey there,</h2>
-      </div>
-      <div class="row about-me-description">
-        <div class="col-lg-9 col-sm-12">
-          <div class="description">
-            <p> <span class="text">nice to meet you. I have recently graduated from Le Wagon, Tel Aviv’s Ruby on Rails Full-Stack Coding bootcamp. Having gained some professional working experience, I realised the great importance of programming, decided to become a full-stack developer and fell in love with coding.</span>
-              <br>
-              <br>
-              <span class="more-text">After finishing school in Hamburg, I started studying Business Administration in my hometown Munich. Having developed a particular interest in the finance and accounting area from the beginning of my studies, I started as a working student at KPMG AG for the rest of my stuides and proceeded afterwards as a risk manager at BMW AG. However, from the first day I started coding I loved it and knew I want to continue with it. </span></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-12 picture">
-            <img src="images/charly.jpg" alt="Profile" class="profile-pic">
-            <div class="resume">
-              <a href="documents/Resume.pdf" target="_blank" id="resume">Download Resume</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experiences">
-      <div class="container">
-        <div class="header">
-          <h2>what i did so far</h2>
-        </div>
-        <div class="row exp-timeline">
-          <div class="col-lg-4 col-sm-12 exp-single">
-            <div class="exp-time">
-              <h4>Nov 2014 - Mar 2017</h4>
-              <h4>Advisory Financial Services</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h5>KPMG AG</h5>
-                <h5>Munich, Germany</h5>
-                <p class="timeline-description">
-                  Part of the project team implementing IFRS 9 within a large international financial institution as a working student. Main focus on the second phase "Impairment".
+      <!-- Main Section -->
+      <section id='intro' class='section section-main active'>
+        <div class='container-fluid'>
+          <div class='v-align'>
+            <div class='inner'>
+              <div class='intro-text'>
+                <h1>I'm Charly</h1>
+                <p>
+                  Junior Software Engineer<br>
+                  Full-Stack Developer<br>
+                  Travel Enthusiast<br>
+                  Coffee Addict<br>
+                  Dog Lover<br><br>
+                  Nice to meet you!<br>
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 exp-single">
-            <div class="exp-time">
-              <h4>Jul 2017 - Jan 2019</h4>
-              <h4>International Risk Management</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h5>BMW AG</h5>
-                <h5>Munich, Germany</h5>
-                <p class="timeline-description">
-                  Business Development in the resiudal value risk department. Quantification of possible impacts on residual values resulting from current political and regulatory discussions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 exp-single">
-            <div class="exp-time">
-              <h4>May 2019 - Jul 2019</h4>
-              <h4>Computer Programming</h4>
-            </div>
-            <div class="timeline-border">
-              <i class="fas fa-circle"></i>
-              <span class="border-line"></span>
-            </div>
-            <div class="timeline">
-              <div class="timeline-content">
-                <h5>Le Wagon</h5>
-                <h5>Tel Aviv, Israel</h5>
-                <p class="timeline-description">
-                  9-week intensive coding bootcamp learning i.e. Ruby on Rails, HTML, CSS and JavaScript ES6. Created, designed and shipped several projects to production.
-                </p>
+                <div class='intro-btns'>
+                  <a href='#about' class='btn-custom section-toggle' data-section='about'>about</a>
+                  <a href='#projects' class='btn-custom section-toggle' data-section='projects'>PROJECTS</a>
+                  <a href='#contact' class='btn-custom section-toggle' data-section='contact'>CONTACT</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects">
-      <div class="container">
-        <div class="header">
-          <h2>what i've been working on</h2>
-        </div>
-        <div class="projects-overview">
-          <div class="row">
-            <div class="col-6 hidden-md project">
-              <a href="https://joyage.fun" target="_blank">
-                <img src="images/joyage.png" alt="Joyage" class="project-img">
-              </a>
+    <!-- About Section -->
+      <section id='about' class='section about-section border-d'>
+        <div class='section-block about-block'>
+          <div class='container-fluid'>
+            <div class='section-header'>
+              <h2>Hi, I am <strong class='color'>Charly</strong></h2>
             </div>
-            <div class="col-xl-6 col-md-6 col-sm-12 project-description">
-             <a href="https://joyage.fun" target="_blank"><h2 class="project-header">Joyage</h2></a>
-             <div class="project-details">
-               <h5 class="project-info">My final project at Le Wagon. Joyage finds the cheapest flight for a group of friends to meet at a common destination. It provides possible destinations based on the user's different starting points and their budget. The application is build by using the Amadeus API. In this way, planning a group trip and booking flights can be done within only a few minutes!</h5>
-               <span class="project-line"></span>
-               <p class="input">Figma, Ruby on Rails, CSS, Javascript</p>
-             </div>
-           </div>
-         </div>
-         <div class="row">
-          <div class="col-6 hidden-md project">
-            <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank">
-              <img src="images/sockciety.png" alt="Sockciety" class="project-img">
-            </a>
+            <div class='row'>
+              <div class='col-md-4'>
+                <img src="images/charly.jpg" alt="Profile Picture">
+              </div>
+
+              <div class='col-md-8' >
+                <div class='about-text' >
+                  <p>After joining the Le Wagon bootcamp in Tel Aviv last year and a couple of months freelancing, I started working as a Junior Software Engingeer in Berlin.</p>
+                  <p>Having gained some professional working experiences, I realised the great importance of coding, decided to become a full-stack developer and fell in love with coding.</p>
+                  <p>During my studies in Business Administration I developed a particular interest in the finance and accounting area. Following this interest, I became a working student in the advisory department at KPMG AG and proceeded afterwards as an international risk manager at BMW AG.</p>
+                  <p>However, from the first day I started coding I loved it and knew I want to continue with it.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12 project-description">
-           <a href="https://socks-mpfadenhauer.herokuapp.com/" target="_blank"><h2 class="project-header">Sockciety</h2></a>
-           <div class="project-details">
-             <h5 class="project-info">Sockciety was my first fun group project - a platform providing a solution to the omnipresent problem of loosing socks. Users can scroll through all exisiting socks and search for a specific one based on various filters. When having a closer look on a single sock the user is provided with information like description, price, location and reviews about the owner.</h5>
-             <span class="project-line"></span>
-             <p class="input">Figma, Ruby on Rails, CSS, Javascript</p>
-           </div>
-         </div>
-       </div>
-       <div class="row">
-        <div class="col-6 hidden-md project">
-          <a href="https://charlys-onlineshop.herokuapp.com/" target="_blank">
-            <img src="images/onlineshop.png" alt="Onlineshop" class="project-img">
-          </a>
         </div>
-        <div class="col-xl-6 col-md-6 col-sm-12 project-description">
-         <a href="https://charlys-onlineshop.herokuapp.com/" target="_blank"><h2 class="project-header">Myos</h2></a>
-         <div class="project-details">
-           <h5 class="project-info">Myos is a simple online shop where users can view all products and search for a specific one via a search interface. Users can have a closer look on each product before adding it to the shopping cart which saves its items until it is transformed into an order by entering the email adress. Wihtin the shopping cart the user is able to change the amount of each product or even delete it completely from the cart.</h5>
-           <span class="project-line"></span>
-           <p class="input">Figma, Ruby on Rails, CSS, Javascript</p>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
+      </section>
 
+      <!-- Project Section -->
+      <section id='projects' class='section portfolio-section border-d' >
+        <div class='section-block portfolio-block' >
+          <div class='container-fluid' >
+            <div class='section-header' >
+              <h2>My <strong class='color'>Projects</strong></h2>
+            </div>
+            <div class="portfolio-items">
 
-<section id="skills">
-  <div class="container">
-    <div class="header">
-      <h2>my stack</h2>
+              <div class="portfolio-item">
+                <div class='inner' >
+                  <img src='images/Joyage copy.png' alt>
+                  <div class='overlay' >
+                    <a href='#popup-1' class='view-project' >
+                      View Project
+                    </a>
+                    <!--project popup-->
+                    <div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
+                      <figure>
+                        <!--project popup image-->
+                        <img src='images/Joyage copy.png' alt>
+                      </figure>
+                      <div class='content' >
+                        <!--project popup title-->
+                        <h4>Joyage</h4>
+                        <!--project popup description-->
+                        <p>
+                          My final project at Le Wagon. Joyage finds the cheapest flight for a group of friends to meet at a common destination. It provides possible destinations based on the user's different starting points and their budget. The application is build by using the Amadeus API. In this way, planning a group trip and booking flights can be done within only a few minutes!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class='inner' >
+                  <img src='images/Onlineshop copy.png' alt>
+                  <div class='overlay' >
+                    <a href='#popup-2' class='view-project' >
+                      View Project
+                    </a>
+                    <!--project popup-->
+                    <div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
+                      <figure>
+                        <!--project popup image-->
+                        <img src='images/Onlineshop copy.png' alt>
+                      </figure>
+                      <div class='content' >
+                        <!--project popup title-->
+                        <h4>Myos Onlineshop</h4>
+                        <!--project popup description-->
+                        <p>
+                          Myos is a simple online shop where users can view all products and search for a specific one via a search interface. Users can have a closer look on each product before adding it to the shopping cart which saves its items until it is transformed into an order by entering the email adress. Wihtin the shopping cart the user is able to change the amount of each product or even delete it completely from the cart.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class='inner' >
+                  <img src='images/Sockciety copy.png' alt>
+                  <div class='overlay'>
+                    <a href='#popup-3' class='view-project' >
+                      View Project
+                    </a>
+                    <!--project popup-->
+                    <div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
+                      <figure>
+                        <!--project popup image-->
+                        <img src='images/Sockciety copy.png' alt>
+                      </figure>
+                      <div class='content' >
+                        <!--project popup title-->
+                        <h4>Sockciety</h4>
+                        <!--project popup description-->
+                        <p>
+                          Sockciety was my first fun group project - a platform providing a solution to the omnipresent problem of loosing socks. Users can scroll through all exisiting socks and search for a specific one based on various filters. When having a closer look on a single sock the user is provided with information like description, price, location and reviews about the owner.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id='contact' class='section contact-section border-d' >
+        <div class='section-block contact-block' >
+          <div class='container-fluid' >
+            <div class='section-header text-center' >
+              <h2>Contact <strong>Me</strong></h2>
+            </div>
+            <div class="row contact-info-icons">
+
+                <div class='contact-info' >
+                  <a href="https://www.linkedin.com/in/charlottehetzler/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class='contact-info' >
+                  <a href="https://github.com/charlottehetzler"><i class="fab fa-github"></i></a>
+                </div>
+                <div class='contact-info' >
+                  <a href="mailto:info@charlottehetzler.com"><i class="fas fa-envelope"></i></a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="skill-description"><span>after attending the Le Wagon bootcamp I’m especailly confident with Ruby on Rails, HTML, CSS, Bootstrap and Javascript. Currently I’m building up my knowledge learning React.
-          <br>
-          <br>
-          Each website follows a structred process starting with a detailed schema following a first design draft with an UI kit in Figma.
-        </span></p>
-      </div>
-    </div>
-    <h4 class="skills-overview">Ruby on Rails | PostgreSQL | Git | HTML | CSS | Javascript | Bootstrap</h4>
-  </section>
-
-
-  <section id="contact">
-    <div class="container">
-      <div class="header">
-        <h2>lets get in touch</h2>
-      </div>
-      <div class="row contacts">
-        <div class="col-6">
-          <div class="contact-card">
-              <h2 id=card-header-name>Charlotte Hetzler</h2>
-            <div class="card-info-contact">
-              <h4 id=card-header-second>full-stack developer</h4>
-            </div>
-            <div class="card-info-contact">
-              <h5 id="card-email">info@charlottehetzler.com</h5>
-              <h5 id=card-number>+49 1784664985</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="contact-cards">
-            <div id="hello-card">
-              <h2 id=card-header>say hello here</h2>
-              <div id="contact-icons" class="card-info">
-                <a href="mailto:info@charlottehetzler.com"><i class="fas fa-envelope" id=contact-icon></i></a>
-<!--                 <a href="https://wa.me/+491784664985" target="_blank"><i class="fab fa-whatsapp" id=contact-icon></i></a> -->
-                <a href="https://www.linkedin.com/in/charlottehetzler/" target="_blank"><i class="fab fa-linkedin" id=contact-icon></i></a>
-                <a href="https://www.xing.com/profile/Charlotte_Hetzler/cv" target="_blank"><i class="fab fa-xing" id=contact-icon></i></a>
-              </div>
-            </div>
-            <div id="follow-card">
-              <h2 id=card-header>or follow me</h2>
-              <div id="contact-icons" class="card-info">
-                <a href="https://github.com/charlottehetzler" target="_blank"><i class="fab fa-github" id=contact-icon></i></a>
-                <a href="https://www.facebook.com/charly.hetzler" target="_blank"><i class="fab fa-facebook" id=contact-icon></i></a>
-                <a href="https://www.instagram.com/charlyhetzler/?hl=de" target="_blank"><i class="fab fa-instagram" id=contact-icon></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  </div>
 </body>
-<script src="application.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="application.js"></script>
+<script src="popup.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
