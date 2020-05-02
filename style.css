@@ -647,11 +647,11 @@ body.section-switching.up .animation-block{
   padding:0;
   margin:-5px;
   overflow:visible !important;
-  display: flex;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
-.portfolio-items > .portfolio-item{
-  width:33.3333%;
-}
+
 .portfolio-items > .portfolio-item > .inner{
   margin:5px;
   position:relative;
@@ -807,7 +807,7 @@ body.section-switching.up .animation-block{
 }
 .popup-box{
   background:#FFF;
-  max-width:450px;
+  max-width: 600px !important;
   margin:0 auto;
   position:relative;
   -webkit-box-shadow: 0 0 0 4px #FFF;
@@ -841,6 +841,25 @@ body.section-switching.up .animation-block{
   color: rgba(0,0,0,.45);
   font-weight :500;
 }
+
+.carousel-control-prev {
+  left: -25px;
+  color: #b00024;
+}
+
+.carousel-control-next {
+  right: -25px;
+  color: #b00024;
+}
+
+a.project-link {
+  color:#b00024;
+  text-decoration: none;
+}
+a.project-link:hover {
+  text-decoration: underline;
+}
+
 
 
 /*=======================================================
