@@ -13,7 +13,8 @@ body {
   -webkit-overflow-scrolling: touch;
   margin-left: auto;
   margin-right: auto;
-  background: #020617 !important;
+  /* background: #020617 !important; */
+  background-image: linear-gradient(to right bottom, #020617, #0b1524, #0c1f32, #092a3f, #00364d) !important;
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: #FFFEFE !important;
