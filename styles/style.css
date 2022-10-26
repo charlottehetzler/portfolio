@@ -1,0 +1,187 @@
+:root {
+  --bg-1: #e5e2db;
+  /* --color-1: red; */
+  --color-1: #000000cc;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-1);
+  background: var(--bg-1);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+p {
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+.text-start {
+  text-align: start;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.sidebar {
+  top: 6rem;
+  right: 6%;
+  position: absolute;
+}
+.h-full {
+  height: 100%;
+}
+
+.work {
+  display: grid;
+  align-items: center;
+}
+
+footer {
+  padding: 1.5rem 0;
+  font-weight: 500;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1rem;
+}
+
+.work-list p,
+.sidebar a {
+  margin-bottom: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+.work-list p {
+  font-weight: 600;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
+  padding-top: 7rem;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+#toggler {
+  position: fixed;
+  top: 5rem;
+  cursor: pointer;
+  left: 5%;
+  z-index: 80;
+  display: block;
+}
+#darkToggler {
+  position: fixed;
+
+  bottom: 5rem;
+  cursor: pointer;
+  right: 5%;
+  color: red;
+  display: block;
+
+  z-index: 99;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+    padding: 0 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .col-span-1 {
+    padding-top: 0;
+  }
+  .me {
+    padding-top: 5rem;
+  }
+  .sidebar {
+    right: 12%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+    padding: 0 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .col-span-1 {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  .me {
+    padding-top: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding: 0 4rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .me {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 5rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 6rem;
+  }
+}
